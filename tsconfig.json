@@ -1,0 +1,17 @@
+{
+  "extends": "plasmo/templates/tsconfig.base",
+  "exclude": ["node_modules"],
+  "include": [
+    ".plasmo/index.d.ts",
+    "./**/*.ts",
+    "./**/*.tsx",
+    "src/features/Button.jsx"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "~*": ["./src/*"],
+      "assets/*": ["assets/*"]
+    },
+    "baseUrl": "."
+  }
+}
